@@ -1,0 +1,36 @@
+{
+	"name": "@elijahjcobb/flightrackr",
+	"version": "0.0.0",
+	"description": "",
+	"main": "dist/index",
+	"types": "dist/index",
+	"scripts": {
+		"prepublishOnly": "npm run compile",
+		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+		"watch": "tsc -w -p .",
+		"clean": "rm -rf dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elijahjcobb/flightrackr.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [],
+	"author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/elijahjcobb/flightrackr/issues"
+	},
+	"homepage": "https://github.com/elijahjcobb/flightrackr#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "latest",
+		"typescript": "latest",
+		"tslint": "latest"
+	},
+	"files": [
+		"dist"
+	]
+}
